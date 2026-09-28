@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="uI6NPnTfEgah6ACSttyZ">
+    <mxGraphModel dx="1212" dy="680" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#CCFFFF,#121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml Cas2_ObjectDiagram\n\nobject \&quot;rule1 : CustomAnalyticsRule\&quot; as rule1 {\n  ruleId = \&quot;AR-BruteForce-01\&quot;\n  name = \&quot;Détection brute force\&quot;\n  severity = \&quot;High\&quot;\n  isEnabled = true\n  customId = \&quot;CUSTOM-001\&quot;\n}\n\nobject \&quot;query1 : KQLQueries\&quot; as query1 {\n  kqlID = \&quot;KQL-001\&quot;\n  querieText = \&quot;SigninLogs | where ResultType != 0 | summarize...\&quot;\n  executeTime = \&quot;1.4s\&quot;\n}\n\nobject \&quot;wl1 : Watchlist\&quot; as wl1 {\n  wId = \&quot;WL-TrustedIPs\&quot;\n  items = [\&quot;41.202.10.5\&quot;, \&quot;svc-backup@smartovate.com\&quot;]\n}\n\nobject \&quot;table1 : LogTable\&quot; as table1 {\n  tableName = \&quot;SigninLogs\&quot;\n  ingestedVolumeInGB = 12.4\n}\n\nobject \&quot;incident1 : SecurityIncident\&quot; as incident1 {\n  incidentId = \&quot;INC-2026-0842\&quot;\n  title = \&quot;Connexions suspectes détectées\&quot;\n  severity = \&quot;High\&quot;\n  status = \&quot;New\&quot;\n  createdAt = \&quot;2026-08-13T09:15:00\&quot;\n}\n\nrule1 -- query1\nrule1 -- wl1\nquery1 -- table1\nrule1 -- incident1\n\n@enduml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="9RUz-wTTzaAVntscN6mN-16">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="rule1 : CustomAnalyticsRule" plantUmlId="obj_0" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="rule1 : CustomAnalyticsRule" id="9RUz-wTTzaAVntscN6mN-17">
+          <mxCell parent="9RUz-wTTzaAVntscN6mN-16" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="126" width="207.90000000000003" x="227.00000000000017" y="189" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ruleId = &quot;AR-BruteForce-01&quot;&#xa;name = &quot;Détection brute force&quot;&#xa;severity = &quot;High&quot;&#xa;isEnabled = true&#xa;customId = &quot;CUSTOM-001&quot;" plantUmlId="oattr_1" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="ruleId = &quot;AR-BruteForce-01&quot;&#xa;name = &quot;Détection brute force&quot;&#xa;severity = &quot;High&quot;&#xa;isEnabled = true&#xa;customId = &quot;CUSTOM-001&quot;" id="9RUz-wTTzaAVntscN6mN-18">
+          <mxCell parent="9RUz-wTTzaAVntscN6mN-17" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" vertex="1">
+            <mxGeometry height="103" width="207.90000000000003" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="query1 : KQLQueries" plantUmlId="obj_2" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="query1 : KQLQueries" id="9RUz-wTTzaAVntscN6mN-19">
+          <mxCell parent="9RUz-wTTzaAVntscN6mN-16" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="88" width="436.1000000000002" x="112.89999999999998" y="363" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="kqlID = &quot;KQL-001&quot;&#xa;querieText = &quot;SigninLogs | where ResultType != 0 | summarize...&quot;&#xa;executeTime = &quot;1.4s&quot;" plantUmlId="oattr_3" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="kqlID = &quot;KQL-001&quot;&#xa;querieText = &quot;SigninLogs | where ResultType != 0 | summarize...&quot;&#xa;executeTime = &quot;1.4s&quot;" id="9RUz-wTTzaAVntscN6mN-20">
+          <mxCell parent="9RUz-wTTzaAVntscN6mN-19" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" vertex="1">
+            <mxGeometry height="65" width="436.1000000000002" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="wl1 : Watchlist" plantUmlId="obj_4" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="wl1 : Watchlist" id="9RUz-wTTzaAVntscN6mN-21">
+          <mxCell parent="9RUz-wTTzaAVntscN6mN-16" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="69" width="369.7000000000001" x="146.3500000000002" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="wId = &quot;WL-TrustedIPs&quot;&#xa;items = [&quot;41.202.10.5&quot;, &quot;svc-backup@smartovate.com&quot;]" plantUmlId="oattr_5" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="wId = &quot;WL-TrustedIPs&quot;&#xa;items = [&quot;41.202.10.5&quot;, &quot;svc-backup@smartovate.com&quot;]" id="9RUz-wTTzaAVntscN6mN-22">
+          <mxCell parent="9RUz-wTTzaAVntscN6mN-21" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" vertex="1">
+            <mxGeometry height="46" width="369.7000000000001" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="table1 : LogTable" plantUmlId="obj_6" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="table1 : LogTable" id="9RUz-wTTzaAVntscN6mN-23">
+          <mxCell parent="9RUz-wTTzaAVntscN6mN-16" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="69" width="190.10000000000002" x="235.90000000000026" y="528" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="tableName = &quot;SigninLogs&quot;&#xa;ingestedVolumeInGB = 12.4" plantUmlId="oattr_7" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="tableName = &quot;SigninLogs&quot;&#xa;ingestedVolumeInGB = 12.4" id="9RUz-wTTzaAVntscN6mN-24">
+          <mxCell parent="9RUz-wTTzaAVntscN6mN-23" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" vertex="1">
+            <mxGeometry height="46" width="190.10000000000002" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="incident1 : SecurityIncident" plantUmlId="obj_8" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="incident1 : SecurityIncident" id="9RUz-wTTzaAVntscN6mN-25">
+          <mxCell parent="9RUz-wTTzaAVntscN6mN-16" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="126" width="280.20000000000005" x="533.0000000000002" y="189" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="incidentId = &quot;INC-2026-0842&quot;&#xa;title = &quot;Connexions suspectes détectées&quot;&#xa;severity = &quot;High&quot;&#xa;status = &quot;New&quot;&#xa;createdAt = &quot;2026-08-13T09:15:00&quot;" plantUmlId="oattr_9" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="incidentId = &quot;INC-2026-0842&quot;&#xa;title = &quot;Connexions suspectes détectées&quot;&#xa;severity = &quot;High&quot;&#xa;status = &quot;New&quot;&#xa;createdAt = &quot;2026-08-13T09:15:00&quot;" id="9RUz-wTTzaAVntscN6mN-26">
+          <mxCell parent="9RUz-wTTzaAVntscN6mN-25" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" vertex="1">
+            <mxGeometry height="103" width="280.20000000000005" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_10" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="9RUz-wTTzaAVntscN6mN-27">
+          <mxCell edge="1" parent="9RUz-wTTzaAVntscN6mN-16" source="9RUz-wTTzaAVntscN6mN-17" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="9RUz-wTTzaAVntscN6mN-19">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_11" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="9RUz-wTTzaAVntscN6mN-28">
+          <mxCell edge="1" parent="9RUz-wTTzaAVntscN6mN-16" source="9RUz-wTTzaAVntscN6mN-17" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="9RUz-wTTzaAVntscN6mN-21">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_12" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="9RUz-wTTzaAVntscN6mN-29">
+          <mxCell edge="1" parent="9RUz-wTTzaAVntscN6mN-16" source="9RUz-wTTzaAVntscN6mN-19" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="9RUz-wTTzaAVntscN6mN-23">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_13" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="9RUz-wTTzaAVntscN6mN-30">
+          <mxCell edge="1" parent="9RUz-wTTzaAVntscN6mN-16" source="9RUz-wTTzaAVntscN6mN-17" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="9RUz-wTTzaAVntscN6mN-25">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

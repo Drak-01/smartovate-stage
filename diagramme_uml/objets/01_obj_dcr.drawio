@@ -1,0 +1,119 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="m2IaUwdzOUQtFEcGatT3">
+    <mxGraphModel dx="858" dy="482" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#CCFFFF,#121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml Cas1_ObjectDiagram\n\nobject \&quot;dcr1 : DataCollectionRule\&quot; as dcr1 {\n  dcrId = \&quot;DCR-AMA-01\&quot;\n  name = \&quot;Collecte SecurityEvent + Syslog\&quot;\n  collectedStreams = [\&quot;Microsoft-SecurityEvent\&quot;, \&quot;Microsoft-Syslog\&quot;]\n}\n\nobject \&quot;vm1 : VirtualMachine\&quot; as vm1 {\n  vmID = \&quot;VM-WIN-01\&quot;\n  osType = \&quot;Windows\&quot;\n  IP = \&quot;10.0.1.15\&quot;\n  status = \&quot;Running\&quot;\n  nsgRulesStatus = \&quot;OK\&quot;\n}\n\nobject \&quot;vm2 : VirtualMachine\&quot; as vm2 {\n  vmID = \&quot;VM-LNX-01\&quot;\n  osType = \&quot;Linux\&quot;\n  IP = \&quot;10.0.1.22\&quot;\n  status = \&quot;Running\&quot;\n  nsgRulesStatus = \&quot;OK\&quot;\n}\n\nobject \&quot;agent1 : AzureMonitorAgent\&quot; as agent1 {\n  agentId = \&quot;AMA-WIN-01\&quot;\n}\n\nobject \&quot;agent2 : AzureMonitorAgent\&quot; as agent2 {\n  agentId = \&quot;AMA-LNX-01\&quot;\n}\n\nobject \&quot;table1 : LogTable\&quot; as table1 {\n  tableName = \&quot;SecurityEvent\&quot;\n  ingestedVolumeInGB = 3.2\n}\n\nobject \&quot;table2 : LogTable\&quot; as table2 {\n  tableName = \&quot;Syslog\&quot;\n  ingestedVolumeInGB = 1.8\n}\n\ndcr1 -- agent1\ndcr1 -- agent2\nagent1 -- vm1\nagent2 -- vm2\nagent1 -- table1\nagent2 -- table2\n\n@enduml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="52rT9nG8eBR8Zu-6Cwh0-52">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="dcr1 : DataCollectionRule" plantUmlId="obj_0" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="dcr1 : DataCollectionRule" id="52rT9nG8eBR8Zu-6Cwh0-53">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-52" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="88" width="448.4000000000002" x="193.94999999999993" y="124" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="dcrId = &quot;DCR-AMA-01&quot;&#xa;name = &quot;Collecte SecurityEvent + Syslog&quot;&#xa;collectedStreams = [&quot;Microsoft-SecurityEvent&quot;, &quot;Microsoft-Syslog&quot;]" plantUmlId="oattr_1" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="dcrId = &quot;DCR-AMA-01&quot;&#xa;name = &quot;Collecte SecurityEvent + Syslog&quot;&#xa;collectedStreams = [&quot;Microsoft-SecurityEvent&quot;, &quot;Microsoft-Syslog&quot;]" id="52rT9nG8eBR8Zu-6Cwh0-54">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-53" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" vertex="1">
+            <mxGeometry height="65" width="448.4000000000002" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="vm1 : VirtualMachine" plantUmlId="obj_2" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="vm1 : VirtualMachine" id="52rT9nG8eBR8Zu-6Cwh0-55">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-52" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="126" width="154.1" x="23" y="382" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="vmID = &quot;VM-WIN-01&quot;&#xa;osType = &quot;Windows&quot;&#xa;IP = &quot;10.0.1.15&quot;&#xa;status = &quot;Running&quot;&#xa;nsgRulesStatus = &quot;OK&quot;" plantUmlId="oattr_3" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="vmID = &quot;VM-WIN-01&quot;&#xa;osType = &quot;Windows&quot;&#xa;IP = &quot;10.0.1.15&quot;&#xa;status = &quot;Running&quot;&#xa;nsgRulesStatus = &quot;OK&quot;" id="52rT9nG8eBR8Zu-6Cwh0-56">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-55" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" vertex="1">
+            <mxGeometry height="103" width="154.1" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="vm2 : VirtualMachine" plantUmlId="obj_4" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="vm2 : VirtualMachine" id="52rT9nG8eBR8Zu-6Cwh0-57">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-52" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="126" width="154.1" x="446.00000000000006" y="376" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="vmID = &quot;VM-LNX-01&quot;&#xa;osType = &quot;Linux&quot;&#xa;IP = &quot;10.0.1.22&quot;&#xa;status = &quot;Running&quot;&#xa;nsgRulesStatus = &quot;OK&quot;" plantUmlId="oattr_5" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="vmID = &quot;VM-LNX-01&quot;&#xa;osType = &quot;Linux&quot;&#xa;IP = &quot;10.0.1.22&quot;&#xa;status = &quot;Running&quot;&#xa;nsgRulesStatus = &quot;OK&quot;" id="52rT9nG8eBR8Zu-6Cwh0-58">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-57" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" vertex="1">
+            <mxGeometry height="103" width="154.1" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="agent1 : AzureMonitorAgent" plantUmlId="obj_6" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="agent1 : AzureMonitorAgent" id="52rT9nG8eBR8Zu-6Cwh0-59">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-52" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="50" width="192.70000000000002" x="207.95000000000005" y="272" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="agentId = &quot;AMA-WIN-01&quot;" plantUmlId="oattr_7" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="agentId = &quot;AMA-WIN-01&quot;" id="52rT9nG8eBR8Zu-6Cwh0-60">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-59" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" vertex="1">
+            <mxGeometry height="27" width="192.70000000000002" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="agent2 : AzureMonitorAgent" plantUmlId="obj_8" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="agent2 : AzureMonitorAgent" id="52rT9nG8eBR8Zu-6Cwh0-61">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-52" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="50" width="192.70000000000002" x="435.6500000000001" y="272" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="agentId = &quot;AMA-LNX-01&quot;" plantUmlId="oattr_9" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="agentId = &quot;AMA-LNX-01&quot;" id="52rT9nG8eBR8Zu-6Cwh0-62">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-61" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" vertex="1">
+            <mxGeometry height="27" width="192.70000000000002" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="table1 : LogTable" plantUmlId="obj_10" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="table1 : LogTable" id="52rT9nG8eBR8Zu-6Cwh0-63">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-52" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="69" width="195.00000000000003" x="232" y="404.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="tableName = &quot;SecurityEvent&quot;&#xa;ingestedVolumeInGB = 3.2" plantUmlId="oattr_11" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="tableName = &quot;SecurityEvent&quot;&#xa;ingestedVolumeInGB = 3.2" id="52rT9nG8eBR8Zu-6Cwh0-64">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-63" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" vertex="1">
+            <mxGeometry height="46" width="195.00000000000003" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="table2 : LogTable" plantUmlId="obj_12" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="table2 : LogTable" id="52rT9nG8eBR8Zu-6Cwh0-65">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-52" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="69" width="182.10000000000002" x="631.2" y="410.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="tableName = &quot;Syslog&quot;&#xa;ingestedVolumeInGB = 1.8" plantUmlId="oattr_13" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="tableName = &quot;Syslog&quot;&#xa;ingestedVolumeInGB = 1.8" id="52rT9nG8eBR8Zu-6Cwh0-66">
+          <mxCell parent="52rT9nG8eBR8Zu-6Cwh0-65" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" vertex="1">
+            <mxGeometry height="46" width="182.10000000000002" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_14" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="52rT9nG8eBR8Zu-6Cwh0-67">
+          <mxCell edge="1" parent="52rT9nG8eBR8Zu-6Cwh0-52" source="52rT9nG8eBR8Zu-6Cwh0-53" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="52rT9nG8eBR8Zu-6Cwh0-59">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_15" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="52rT9nG8eBR8Zu-6Cwh0-68">
+          <mxCell edge="1" parent="52rT9nG8eBR8Zu-6Cwh0-52" source="52rT9nG8eBR8Zu-6Cwh0-53" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="52rT9nG8eBR8Zu-6Cwh0-61">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_16" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="52rT9nG8eBR8Zu-6Cwh0-69">
+          <mxCell edge="1" parent="52rT9nG8eBR8Zu-6Cwh0-52" source="52rT9nG8eBR8Zu-6Cwh0-59" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="52rT9nG8eBR8Zu-6Cwh0-55">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="227.37" y="352.57" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_17" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="52rT9nG8eBR8Zu-6Cwh0-70">
+          <mxCell edge="1" parent="52rT9nG8eBR8Zu-6Cwh0-52" source="52rT9nG8eBR8Zu-6Cwh0-61" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="52rT9nG8eBR8Zu-6Cwh0-57">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_18" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="52rT9nG8eBR8Zu-6Cwh0-71">
+          <mxCell edge="1" parent="52rT9nG8eBR8Zu-6Cwh0-52" source="52rT9nG8eBR8Zu-6Cwh0-59" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="52rT9nG8eBR8Zu-6Cwh0-63">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_19" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="52rT9nG8eBR8Zu-6Cwh0-72">
+          <mxCell edge="1" parent="52rT9nG8eBR8Zu-6Cwh0-52" source="52rT9nG8eBR8Zu-6Cwh0-61" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="52rT9nG8eBR8Zu-6Cwh0-65">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

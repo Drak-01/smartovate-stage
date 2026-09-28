@@ -1,0 +1,56 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="3vCPDFsRY_mK8QVI3p3M">
+    <mxGraphModel dx="490" dy="275" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#CCFFFF,#121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml Cas1_Collaboration_DeploiementAgent\n\n&#39; ===================== OBJETS =====================\nobject \&quot;dcr1 : DataCollectionRule\&quot; as dcr1\nobject \&quot;agent1 : AzureMonitorAgent\&quot; as agent1\nobject \&quot;vm1 : VirtualMachine\&quot; as vm1\nobject \&quot;table1 : LogTable\&quot; as table1\n\n&#39; ===================== LIENS + MESSAGES NUMÉROTÉS =====================\n\ndcr1 -- agent1 : \&quot;1: applyToVM()\\n1.2: retourne(status)\&quot;\nagent1 -- vm1 : \&quot;1.1: checkConnectivity()\\n1.1.1: retourne(nsgRulesStatus)\&quot;\nagent1 -- table1 : \&quot;2: [connectivité OK]\\nenvoyer(événement)\&quot;\n\n@enduml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="njaUU_5vPr5j-RvcB-f4-9">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="dcr1 : DataCollectionRule" plantUmlId="obj_0" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="dcr1 : DataCollectionRule" id="njaUU_5vPr5j-RvcB-f4-10">
+          <mxCell parent="njaUU_5vPr5j-RvcB-f4-9" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="39" width="177" x="299.1" y="123" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="agent1 : AzureMonitorAgent" plantUmlId="obj_1" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="agent1 : AzureMonitorAgent" id="njaUU_5vPr5j-RvcB-f4-11">
+          <mxCell parent="njaUU_5vPr5j-RvcB-f4-9" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="39" width="192.70000000000002" x="294" y="246" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="vm1 : VirtualMachine" plantUmlId="obj_2" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="vm1 : VirtualMachine" id="njaUU_5vPr5j-RvcB-f4-12">
+          <mxCell parent="njaUU_5vPr5j-RvcB-f4-9" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="39" width="152.39999999999998" x="207" y="377" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="table1 : LogTable" plantUmlId="obj_3" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="table1 : LogTable" id="njaUU_5vPr5j-RvcB-f4-13">
+          <mxCell parent="njaUU_5vPr5j-RvcB-f4-9" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="39" width="127.8" x="450" y="383" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&quot;1: applyToVM()&#xa;1.2: retourne(status)&quot;" plantUmlId="l_4" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="&quot;1: applyToVM()&#xa;1.2: retourne(status)&quot;" id="njaUU_5vPr5j-RvcB-f4-14">
+          <mxCell edge="1" parent="njaUU_5vPr5j-RvcB-f4-9" source="njaUU_5vPr5j-RvcB-f4-10" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="njaUU_5vPr5j-RvcB-f4-11">
+            <mxGeometry relative="1" x="0.179" y="63" as="geometry">
+              <mxPoint as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="&quot;1.1: checkConnectivity()&#xa;1.1.1: retourne(nsgRulesStatus)&quot;" plantUmlId="l_5" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="&quot;1.1: checkConnectivity()&#xa;1.1.1: retourne(nsgRulesStatus)&quot;" id="njaUU_5vPr5j-RvcB-f4-15">
+          <mxCell edge="1" parent="njaUU_5vPr5j-RvcB-f4-9" source="njaUU_5vPr5j-RvcB-f4-11" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="njaUU_5vPr5j-RvcB-f4-12">
+            <mxGeometry relative="1" x="0.5743" y="-34" as="geometry">
+              <mxPoint as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="&quot;2: [connectivité OK]&#xa;envoyer(événement)&quot;" plantUmlId="l_6" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="&quot;2: [connectivité OK]&#xa;envoyer(événement)&quot;" id="njaUU_5vPr5j-RvcB-f4-16">
+          <mxCell edge="1" parent="njaUU_5vPr5j-RvcB-f4-9" source="njaUU_5vPr5j-RvcB-f4-11" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="njaUU_5vPr5j-RvcB-f4-13">
+            <mxGeometry relative="1" x="0.6146" y="51" as="geometry">
+              <mxPoint as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

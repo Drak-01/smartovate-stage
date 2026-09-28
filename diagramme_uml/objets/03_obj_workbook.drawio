@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="opByLfea0LtIbKTisE91">
+    <mxGraphModel dx="1717" dy="963" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#CCFFFF,#121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml Cas3_ObjectDiagram\n\nobject \&quot;wb1 : Workbook\&quot; as wb1 {\n  wID = \&quot;WB-Identites-01\&quot;\n  title = \&quot;Supervision des identités\&quot;\n  isAutoRefreshed = true\n}\n\nobject \&quot;query1 : KQLQueries\&quot; as query1 {\n  kqlID = \&quot;KQL-010\&quot;\n  querieText = \&quot;SigninLogs | summarize count() by ResultType, bin(TimeGenerated, 1d)\&quot;\n  executeTime = \&quot;0.8s\&quot;\n}\n\nobject \&quot;query2 : KQLQueries\&quot; as query2 {\n  kqlID = \&quot;KQL-011\&quot;\n  querieText = \&quot;SigninLogs | summarize count() by Location\&quot;\n  executeTime = \&quot;TIMEOUT\&quot;\n}\n\nobject \&quot;table1 : LogTable\&quot; as table1 {\n  tableName = \&quot;SigninLogs\&quot;\n  ingestedVolumeInGB = 12.4\n}\n\nwb1 -- query1\nwb1 -- query2\nquery1 -- table1\nquery2 -- table1\n\nnote right of query2\n  status = \&quot;timeout\&quot;\n  → graphique vide affiché (Bug 3)\nend note\n\n@enduml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="hfPrTg2j8IBmGD8t4Igb-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="wb1 : Workbook" plantUmlId="obj_0" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="wb1 : Workbook" id="hfPrTg2j8IBmGD8t4Igb-2">
+          <mxCell parent="hfPrTg2j8IBmGD8t4Igb-1" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;swimlaneFillColor=default;gradientColor=none;" vertex="1">
+            <mxGeometry height="88" width="229.10000000000005" x="415.05000000000007" y="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="wID = &quot;WB-Identites-01&quot;&#xa;title = &quot;Supervision des identités&quot;&#xa;isAutoRefreshed = true" plantUmlId="oattr_1" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="wID = &quot;WB-Identites-01&quot;&#xa;title = &quot;Supervision des identités&quot;&#xa;isAutoRefreshed = true" id="hfPrTg2j8IBmGD8t4Igb-3">
+          <mxCell parent="hfPrTg2j8IBmGD8t4Igb-2" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;" vertex="1">
+            <mxGeometry height="65" width="229.10000000000005" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="query1 : KQLQueries" plantUmlId="obj_2" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="query1 : KQLQueries" id="hfPrTg2j8IBmGD8t4Igb-4">
+          <mxCell parent="hfPrTg2j8IBmGD8t4Igb-1" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;swimlaneFillColor=default;gradientColor=none;" vertex="1">
+            <mxGeometry height="88" width="569.6" x="30" y="248" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="kqlID = &quot;KQL-010&quot;&#xa;querieText = &quot;SigninLogs | summarize count() by ResultType, bin(TimeGenerated, 1d)&quot;&#xa;executeTime = &quot;0.8s&quot;" plantUmlId="oattr_3" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="kqlID = &quot;KQL-010&quot;&#xa;querieText = &quot;SigninLogs | summarize count() by ResultType, bin(TimeGenerated, 1d)&quot;&#xa;executeTime = &quot;0.8s&quot;" id="hfPrTg2j8IBmGD8t4Igb-5">
+          <mxCell parent="hfPrTg2j8IBmGD8t4Igb-4" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;" vertex="1">
+            <mxGeometry height="65" width="569.6" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="query2 : KQLQueries" plantUmlId="obj_4" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="query2 : KQLQueries" id="hfPrTg2j8IBmGD8t4Igb-6">
+          <mxCell parent="hfPrTg2j8IBmGD8t4Igb-1" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;swimlaneFillColor=default;gradientColor=none;" vertex="1">
+            <mxGeometry height="88" width="394.60000000000014" x="634.6" y="248" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="kqlID = &quot;KQL-011&quot;&#xa;querieText = &quot;SigninLogs | summarize count() by Location&quot;&#xa;executeTime = &quot;TIMEOUT&quot;" plantUmlId="oattr_5" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="kqlID = &quot;KQL-011&quot;&#xa;querieText = &quot;SigninLogs | summarize count() by Location&quot;&#xa;executeTime = &quot;TIMEOUT&quot;" id="hfPrTg2j8IBmGD8t4Igb-7">
+          <mxCell parent="hfPrTg2j8IBmGD8t4Igb-6" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;" vertex="1">
+            <mxGeometry height="65" width="394.60000000000014" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="table1 : LogTable" plantUmlId="obj_6" plantUmlBaseStyle="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;fillColor=#F1F1F1;swimlaneFillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="table1 : LogTable" id="hfPrTg2j8IBmGD8t4Igb-8">
+          <mxCell parent="hfPrTg2j8IBmGD8t4Igb-1" style="swimlane;collapsible=0;startSize=23;rounded=0;whiteSpace=wrap;fontStyle=0;fontSize=14;align=center;swimlaneFillColor=default;gradientColor=none;" vertex="1">
+            <mxGeometry height="69" width="190.10000000000002" x="434.55000000000007" y="396" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="tableName = &quot;SigninLogs&quot;&#xa;ingestedVolumeInGB = 12.4" plantUmlId="oattr_7" plantUmlBaseStyle="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;fillColor=none;strokeColor=none;" plantUmlBaseValue="tableName = &quot;SigninLogs&quot;&#xa;ingestedVolumeInGB = 12.4" id="hfPrTg2j8IBmGD8t4Igb-9">
+          <mxCell parent="hfPrTg2j8IBmGD8t4Igb-8" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;fontSize=14;" vertex="1">
+            <mxGeometry height="46" width="190.10000000000002" y="23" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_8" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="hfPrTg2j8IBmGD8t4Igb-10">
+          <mxCell edge="1" parent="hfPrTg2j8IBmGD8t4Igb-1" source="hfPrTg2j8IBmGD8t4Igb-2" style="endArrow=none;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="hfPrTg2j8IBmGD8t4Igb-4">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_9" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="hfPrTg2j8IBmGD8t4Igb-11">
+          <mxCell edge="1" parent="hfPrTg2j8IBmGD8t4Igb-1" source="hfPrTg2j8IBmGD8t4Igb-2" style="endArrow=none;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="hfPrTg2j8IBmGD8t4Igb-6">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_10" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="hfPrTg2j8IBmGD8t4Igb-12">
+          <mxCell edge="1" parent="hfPrTg2j8IBmGD8t4Igb-1" source="hfPrTg2j8IBmGD8t4Igb-4" style="endArrow=none;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="hfPrTg2j8IBmGD8t4Igb-8">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="l_11" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=12;html=1;rounded=0;" plantUmlBaseValue="" id="hfPrTg2j8IBmGD8t4Igb-13">
+          <mxCell edge="1" parent="hfPrTg2j8IBmGD8t4Igb-1" source="hfPrTg2j8IBmGD8t4Igb-6" style="endArrow=none;fontColor=#000000;fontSize=12;html=1;rounded=0;" target="hfPrTg2j8IBmGD8t4Igb-8">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="status = &quot;timeout&quot;&#xa;→ graphique vide affiché (Bug 3)" plantUmlId="note_12" plantUmlBaseStyle="shape=note;size=14;fillColor=#FEFFDD;strokeColor=#181818;fontSize=12;whiteSpace=wrap;align=left;spacingLeft=4;" plantUmlBaseValue="status = &quot;timeout&quot;&#xa;→ graphique vide affiché (Bug 3)" id="hfPrTg2j8IBmGD8t4Igb-14">
+          <mxCell parent="hfPrTg2j8IBmGD8t4Igb-1" style="shape=note;size=14;fontSize=12;whiteSpace=wrap;align=left;spacingLeft=4;" vertex="1">
+            <mxGeometry height="45" width="213" x="1047" y="270" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="noteln_13" plantUmlBaseStyle="endArrow=none;dashed=1;html=1;strokeColor=#181818;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" plantUmlBaseValue="" id="hfPrTg2j8IBmGD8t4Igb-15">
+          <mxCell edge="1" parent="hfPrTg2j8IBmGD8t4Igb-1" source="hfPrTg2j8IBmGD8t4Igb-14" style="endArrow=none;dashed=1;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;rounded=0;" target="hfPrTg2j8IBmGD8t4Igb-6">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,118 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="aUYeOxRu_BlQvRUNNZo7">
+    <mxGraphModel dx="1212" dy="680" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-49" edge="1" parent="1" source="8yFhs7SThTVE8Zj0sA7z-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeWidth=5;strokeColor=#66B2FF;" target="8yFhs7SThTVE8Zj0sA7z-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0066CC;" value="" vertex="1">
+          <mxGeometry height="106" width="563" x="132" y="896" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-12" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/VM_Linux.svg;" value="" vertex="1">
+          <mxGeometry height="46" width="50" x="602" y="926" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-13" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/VirtualMachineWindows.svg;imageBackground=none;imageBorder=none;rounded=0;imageAspect=1;noLabel=0;portConstraintRotation=0;fixDash=0;container=0;contract=0;moveIcon=0;comic=0;enumerate=0;" value="" vertex="1">
+          <mxGeometry height="46" width="50" x="509" y="926" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-18" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/analytics/Log_Analytics_Workspaces.svg;rounded=1;strokeColor=#d6b656;verticalAlign=middle;fontFamily=Helvetica;fillColor=#fff2cc;labelBackgroundColor=#f8cecc;labelBorderColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="64" width="64" x="361" y="911" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-19" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/Entra_Verified_ID.svg;rounded=1;strokeColor=#d6b656;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;fillColor=#fff2cc;" value="" vertex="1">
+          <mxGeometry height="60.440000000000005" width="68" x="185.5" y="928" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0066CC;" value="" vertex="1">
+          <mxGeometry height="106" width="563" x="132" y="712" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-51" edge="1" parent="1" source="8yFhs7SThTVE8Zj0sA7z-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeWidth=5;strokeColor=#66B2FF;" target="8yFhs7SThTVE8Zj0sA7z-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0066CC;" value="" vertex="1">
+          <mxGeometry height="106" width="563" x="132" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0066CC;" value="" vertex="1">
+          <mxGeometry height="106" width="563" x="132" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0066CC;" value="" vertex="1">
+          <mxGeometry height="106" width="563" x="132" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-26" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Azure_Sentinel.svg;rounded=1;strokeColor=#d6b656;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;fillColor=#fff2cc;" value="" vertex="1">
+          <mxGeometry height="50" width="44" x="235" y="366" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-27" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Analysis_Services.svg;rounded=1;strokeColor=#d6b656;verticalAlign=middle;fontFamily=Helvetica;fillColor=#fff2cc;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="39" width="50" x="393" y="360.5" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-30" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/analytics/Azure_Workbooks.svg;rounded=1;strokeColor=#d6b656;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;fillColor=#fff2cc;" value="" vertex="1">
+          <mxGeometry height="68" width="68" x="380" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="VM Linux" vertex="1">
+          <mxGeometry height="30" width="60" x="597" y="972" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="VM Windows" vertex="1">
+          <mxGeometry height="30" width="76" x="496" y="972" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="Azure Activity Log" vertex="1">
+          <mxGeometry height="30" width="126" x="325" y="975" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="Microsoft Entra ID" vertex="1">
+          <mxGeometry height="19" width="103" x="168" y="983" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="Data Collection Rule" vertex="1">
+          <mxGeometry height="30" width="155.5" x="234" y="788" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-36" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/other/Data_Collection_Rules.svg;rounded=1;strokeColor=#d6b656;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;fillColor=#fff2cc;" value="" vertex="1">
+          <mxGeometry height="68" width="66.60000000000001" x="267" y="724" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-37" parent="1" style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#3333FF;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.2d.agent;pointerEvents=1;rounded=1;fontFamily=Helvetica;fontSize=12;fontColor=default;gradientColor=default;" value="" vertex="1">
+          <mxGeometry height="44.8" width="44.8" x="501" y="735.6" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="Azure Monitor Agent" vertex="1">
+          <mxGeometry height="30" width="125" x="460.9" y="783" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-39" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/analytics/Log_Analytics_Workspaces.svg;rounded=1;strokeColor=#d6b656;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;fillColor=#fff2cc;" value="" vertex="1">
+          <mxGeometry height="64" width="64" x="382" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="Log Analytics WorkSpace" vertex="1">
+          <mxGeometry height="30" width="169" x="319" y="604" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="Microsoft Sentinel" vertex="1">
+          <mxGeometry height="30" width="121" x="196.5" y="410.5" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-44" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.redshift;rounded=1;fontFamily=Helvetica;strokeColor=#3399FF;" value="" vertex="1">
+          <mxGeometry height="78" width="78" x="548" y="341" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-45" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="Analytics Rule" vertex="1">
+          <mxGeometry height="30" width="121" x="529" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-46" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="Watchlist" vertex="1">
+          <mxGeometry height="30" width="121" x="353.5" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="Workbook" vertex="1">
+          <mxGeometry height="30" width="121" x="348.5" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-50" edge="1" parent="1" source="8yFhs7SThTVE8Zj0sA7z-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.555;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeWidth=5;strokeColor=#66B2FF;" target="8yFhs7SThTVE8Zj0sA7z-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-52" edge="1" parent="1" source="8yFhs7SThTVE8Zj0sA7z-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.541;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeWidth=5;strokeColor=#66B2FF;" target="8yFhs7SThTVE8Zj0sA7z-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-53" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#007FFF;fillColor=#dae8fc;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;" value="Couche 1: source de donnée" vertex="1">
+          <mxGeometry height="26" width="161.5" x="132" y="896" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-54" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#007FFF;fillColor=#dae8fc;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;" value="Couche 2: Collecte" vertex="1">
+          <mxGeometry height="30" width="112.5" x="132" y="712" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-55" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#007FFF;fillColor=#dae8fc;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;" value="Couche 3: Stockage Centrale" vertex="1">
+          <mxGeometry height="30" width="165" x="132" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-56" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#007FFF;fillColor=#dae8fc;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;" value="Couche 4: Détection" vertex="1">
+          <mxGeometry height="23" width="129" x="132" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="8yFhs7SThTVE8Zj0sA7z-57" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#007FFF;fillColor=#dae8fc;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;" value="Couche 5: Visualisation" vertex="1">
+          <mxGeometry height="30" width="133" x="132" y="138" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
